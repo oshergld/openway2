@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #header {
+    background-color: #9a33cc;
+    border-style: solid;
+    display:flex;
+    flex-direction: row;
+    color: white;
+    font-size: 50x;
+    justify-content: space-between;
+  }
+  
+  i {
+    margin: 10px; 
+  
+    }
+  img {
+    width: 90px;
+    height: auto;
+  }
+  #button1 {
+    background-color: #9a33cc;
+    border: none;
+    color: white; 
+    font-size:60px;
+  }
+  #button2{
+    background-color: #9a33cc;
+    border: none;
+    color: white; 
+    font-size: 60px;
+  }
+  
+    body {
+      display: block;
+    }
+    #pop_up {
+      display: none;
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 0.5;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      direction: rtl;
+      
+      border: 2px solid red;
+  
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      
+    }
+    
+    #menu1, #menu2 {
+      width: 250px;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+  
+    }
+   
+    li {
+      list-style-type: none;
+      font-family: "Fredoka", sans-serif;
+    }
+    i {
+      padding: 10px;
+      font-size: 12px;
+    }
+    #contact {
+      font-weight: bold;
+    }
+    .fa-xmark {
+      font-size: 20px;
+    } 
+    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <button id= "button2">
+    <i class="fa fa-user" >
+    </i>
+    </button>
+    <img src="https://eco-tech.cloud/wp-content/uploads/2024/07/openway-logo-white.png">
+    
+    <button id="button1">
+    <i class="fa fa-bars" id="bars">
+    </i>
+    </button>
+  </div>
+  
+ <div id = "pop_up">
+    <div id = "exit">
+      <button id = "shaked" >
+      <i class="fa-solid fa-xmark" style="color: #9a33cc;"></i>
+      </button>
+      
+    </div>
+   
+    <div id = "menu1"> 
+      <li class = "first_list"><span class="fa-li"><i class="fa-solid fa-user" style="color: #9a33cc;"></i></span>הפרופיל שלי</li>
+      <li class = "first_list"><span class="fa-li"><i class="fa-solid fa-circle-exclamation" style="color: #9a33cc;"></i></span>צור דיווח</li>
+      <li class = "first_list"><span class="fa-li"><i class="fa-solid fa-road" style="color: #9a33cc;"></i></span>צור הפגנה</li>
+      <li class = "first_list"><span class="fa-li"><i class="fa-solid fa-gear" style="color: #9a33cc;"></i></span>הגדרות אפליקציה</li>
+      
+    </div>
+    <div id = menu2>
+      <li  class = "second_list"><span class="fa-li"><i id = "contact" class="fa-solid fa-phone" style="color: #9a33cc;"></i></span>עזרה</li>
+      <li  class = "second_list"><span class="fa-li"><i class="fa-solid fa-circle-info" style="color: #9a33cc;"></i></span>אודות</li>
+      <li  class = "second_list"><span class="fa-li"><i class="fa-solid fa-shield-halved" style="color: #9a33cc;"></i></span>תנאים ופרטיות</li>
+
+    </div>
+      
+      <ul>
+        <li></li>
+      </ul>
+  </div>
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+  <script>
+    const menu = document.getElementById("button1");
+
+menu.onclick = function() {
+ const popup = document.getElementById("pop_up");
+  popup.style.display= "inline";
+}
+
+const close = document.getElementById("shaked");
+
+shaked.onclick = function() {
+ const popup = document.getElementById("pop_up");
+  popup.style.display= "none";
+}
+  </script> 
+</body>
+</html>
